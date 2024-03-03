@@ -71,6 +71,11 @@ p {
   transition-duration: 0.5s;
 }
 
+iframe {
+  width: 80%;
+  height: 80vh;
+}
+
 html {
   padding: 0%;
   margin: 0%;
@@ -187,7 +192,7 @@ img.large {
     overflow-x: hidden;
     overflow-y: scroll;
     scrollbar-color: #232d30 #111517;
-    scrollbar-width: thin;
+    scrollbar-width: 30px;
   }
   body .content-area .content-browser h2 {
     display: inline-block;
@@ -229,7 +234,7 @@ img.large {
     overflow-x: hidden;
     overflow-y: scroll;
     scrollbar-color: #232d30 #111517;
-    scrollbar-width: thin;
+    scrollbar-width: 30px;
   }
   body .content-area .content-viewer .content-section {
     grid-column-start: 2;

@@ -104,6 +104,11 @@ p{
     transition-duration: .5s;
 }
 
+iframe{
+    width: 80%;
+    height: 80vh;
+}
+
 html{
     padding: 0%;
     margin: 0%;
@@ -256,7 +261,7 @@ img{
                 //border-right: 1px solid $_BorderColor;
 
                 scrollbar-color: $_SecondaryBackground $_PrimaryBackground;
-                scrollbar-width: thin;
+                scrollbar-width: 30px;
 
 
                 h2{
@@ -310,7 +315,7 @@ img{
                 overflow-y: scroll;
 
                 scrollbar-color: $_SecondaryBackground $_PrimaryBackground;
-                scrollbar-width: thin;
+                scrollbar-width: 30px;
 
 
                 .content-section{
