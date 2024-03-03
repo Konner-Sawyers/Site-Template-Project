@@ -2,9 +2,36 @@
 /*
     Global styling definitions for fonts, colors and other reused structures
 */
+/*
+$_PrimaryBackground : rgba($_4, 1);
+$_SecondaryBackground: rgba($_4, 1);
+$_TertiaryBackground: rgba($_4, 1);
+$_BorderColor : rgba($_2, .3);
+
+$_BasicTextColor : rgba(black, 1);
+$_EmphasizedTextColor : rgba(black, 1);
+$_DeemphasizedTextColor : rgba(black, .6);
+*/
+.code-display {
+  margin: auto;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding: 8px;
+  width: 70%;
+  border: 1px solid rgba(149, 160, 155, 0.3);
+  border-radius: 3px;
+}
+.code-display p code {
+  font-size: 14px;
+  font-family: "Courier New", monospace;
+  color: #e4e3d3;
+  opacity: 0.75;
+  padding: 0px;
+}
+
 hr {
   height: 1px;
-  background-color: rgba(149, 160, 155, 0.5);
+  background-color: rgba(149, 160, 155, 0.3);
   width: calc(100% - 160px);
   border: none;
 }
@@ -86,7 +113,7 @@ img.large {
   body {
     margin: 0%;
     padding: 0%;
-    background-color: yellow;
+    background-color: #111517;
     display: grid;
     gap: 0%;
     position: relative;
@@ -122,7 +149,7 @@ img.large {
     font-weight: 300;
   }
   body .nav-bar:hover div p {
-    color: rgba(228, 227, 211, 0.5);
+    color: rgba(228, 227, 211, 0.3);
   }
   body .nav-bar div {
     display: inline-block;
@@ -140,7 +167,7 @@ img.large {
     margin: 0%;
   }
   body .nav-bar div p:hover {
-    color: #CC7178;
+    color: #cc7178;
   }
   body .content-area {
     background-color: #111517;
@@ -153,14 +180,13 @@ img.large {
   }
   body .content-area .content-browser {
     grid-column: 1;
-    background-color: #232D30;
+    background-color: #232d30;
     height: 90vh;
     position: sticky;
     top: 10vh;
     overflow-x: hidden;
     overflow-y: scroll;
-    border-right: 1px solid rgba(149, 160, 155, 0.3);
-    scrollbar-color: #232D30 #111517;
+    scrollbar-color: #232d30 #111517;
     scrollbar-width: thin;
   }
   body .content-area .content-browser h2 {
@@ -171,7 +197,8 @@ img.large {
     margin: 0px;
   }
   body .content-area .content-browser:hover p {
-    color: rgba(228, 227, 211, 0.5);
+    color: rgba(228, 227, 211, 0.3);
+    color: #e4e3d3;
   }
   body .content-area .content-browser a {
     height: auto;
@@ -201,13 +228,14 @@ img.large {
     top: 10vh;
     overflow-x: hidden;
     overflow-y: scroll;
-    scrollbar-color: #232D30 #111517;
+    scrollbar-color: #232d30 #111517;
     scrollbar-width: thin;
   }
   body .content-area .content-viewer .content-section {
     grid-column-start: 2;
     grid-column-end: 8;
     background-color: #1a2124;
+    padding: 36px;
     text-align: center;
     border: 1px solid rgba(149, 160, 155, 0.3);
     border-radius: 3px;

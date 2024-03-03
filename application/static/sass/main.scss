@@ -1,10 +1,10 @@
 
-$_1 : #BC94D3;
-$_2 : #EEDAF4;
-$_3 : #836CB3;
-$_4 : #5F5AA3;
-$_5 : #AA7297;
-$_6 : #885871;
+$_1 : #836CB3;//#BC94D3;
+$_2 : #BC94D3;//#EEDAF4; //Chopping Block
+$_3 : #EEDAF4;//#836CB3;
+$_4 : #F1E7F4;//#5F5AA3;
+//$_5 : //#AA7297;
+//$_6 : //#885871;
 
 @import '../fonts/fonts.css';
 
@@ -21,8 +21,11 @@ $_eggshell : #E4E3D3;
 $_oldrose : #CC7178;
 
 //Site Pallet
+
+
 $_PrimaryBackground : rgba($_darkest, 1);
 $_SecondaryBackground: rgba($_darkishblue, 1);
+$_TertiaryBackground: rgba($_darkblue, 1);
 $_BorderColor : rgba($_eggshellblue, .3);
 
 $_BasicTextColor : rgba($_eggshell, 1);
@@ -30,16 +33,44 @@ $_EmphasizedTextColor : rgba($_oldrose, 1);
 $_DeemphasizedTextColor : rgba($_eggshell, .3);
 
 
+/*
+$_PrimaryBackground : rgba($_4, 1);
+$_SecondaryBackground: rgba($_4, 1);
+$_TertiaryBackground: rgba($_4, 1);
+$_BorderColor : rgba($_2, .3);
+
+$_BasicTextColor : rgba(black, 1);
+$_EmphasizedTextColor : rgba(black, 1);
+$_DeemphasizedTextColor : rgba(black, .6);
+*/
+
+.code-display{
+    margin: auto;
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+    padding: 8px;
+    width: 70%;
+    border: 1px solid $_BorderColor;
+    border-radius: 3px;
+    p code{
+        font-size: 14px;
+        font-family: 'Courier New', monospace;
+        color: $_BasicTextColor;
+        opacity: .75;
+        padding: 0px;
+    }
+}
 
 hr{
     height: 1px;
-    background-color: rgba($_eggshellblue, .5);
+    background-color: $_BorderColor;
     width: calc(100% - 160px);
     border: none;
 }
 
 h1,h2,h3{
-    color: rgba($_eggshell, 1);
+    color: $_BasicTextColor;
     text-align: left;
     padding: 8px 80px;
     font-family: 'Inconsolata';
@@ -62,7 +93,7 @@ a{
 }
 
 p{
-    color: rgba($_eggshell, 1);
+    color: $_BasicTextColor;
     text-align: left;
     padding: 16px 80px;
     padding-bottom: 36px;
@@ -121,7 +152,7 @@ img{
 
         padding: 0%;
 
-        background-color: yellow;
+        background-color: $_PrimaryBackground;
 
         display: grid;
 
@@ -141,7 +172,7 @@ img{
 
         .logo-area{
             grid-area: 1 / 1 / span 1 / span 1;
-            background-color: $_darkest;
+            background-color: $_PrimaryBackground;
             width: 100%;
             height: 100%;
             //border-bottom: 1px solid rgba($_eggshellblue, .3);
@@ -159,19 +190,19 @@ img{
         }
 
         .nav-bar{
-            background-color: rgba($_darkest, 1);
+            background-color: $_PrimaryBackground;
             grid-area: 1 / 2 / span 1 / span 4 ;
             gap: 0%;
             position: sticky;
             top: 0;
-            border-bottom: 1px solid rgba($_eggshellblue, .3);
+            border-bottom: 1px solid $_BorderColor;
             text-align: right;
             div p{
                 font-weight: 300;
             }
             &:hover{
                 div p{
-                    color: rgba($_eggshell, .5);
+                    color: $_DeemphasizedTextColor;
                 }
             }
 
@@ -189,14 +220,14 @@ img{
                     padding: 13% 0%;
                     margin: 0%;
                     &:hover{
-                        color: $_oldrose;
+                        color: $_EmphasizedTextColor;
                     }
                 }
             }
         }
 
         .content-area{
-            background-color: $_darkest;
+            background-color: $_PrimaryBackground;
 
             grid-area: 2 / 1 / span 2 / span 4 ;
 
@@ -213,17 +244,18 @@ img{
 
             .content-browser{
                 grid-column: 1;
-                background-color: $_darkishblue;
+                background-color: $_SecondaryBackground;
                 height: 90vh;
                 position: sticky;
                 top: 10vh;
                 overflow-x: hidden;
                 overflow-y: scroll;
+                
 
                 //border-top: 1px solid rgba($_eggshellblue, .3);
-                border-right: 1px solid rgba($_eggshellblue, .3);
+                //border-right: 1px solid $_BorderColor;
 
-                scrollbar-color: $_darkishblue $_darkest;
+                scrollbar-color: $_SecondaryBackground $_PrimaryBackground;
                 scrollbar-width: thin;
 
 
@@ -238,7 +270,8 @@ img{
 
                 &:hover{
                     p{
-                        color: rgba($_eggshell, .5);
+                        color: $_DeemphasizedTextColor;
+                        color: $_BasicTextColor;
                     }
                 }
 
@@ -252,7 +285,7 @@ img{
                         padding: 4px 40px;
                         margin: 0%;
                         &:hover{
-                            color: rgba($_oldrose, 1);
+                            color: $_EmphasizedTextColor;
                         }
                     }
                 }
@@ -260,13 +293,10 @@ img{
 
             .content-viewer{
                 grid-column: 2;
-                background-color: $_darkest;
+                background-color: $_PrimaryBackground;
 
                 padding-top: 48px;
                 padding-bottom: 48px;
-
-                //padding-top: 48px;
-                //padding-bottom: 48px;
 
                 display: grid;
                 overflow-y: auto;
@@ -279,17 +309,17 @@ img{
                 overflow-x: hidden;
                 overflow-y: scroll;
 
-                scrollbar-color: $_darkishblue $_darkest;
+                scrollbar-color: $_SecondaryBackground $_PrimaryBackground;
                 scrollbar-width: thin;
 
 
                 .content-section{
                     grid-column-start: 2;
                     grid-column-end: 8;
-                    background-color: rgba($_darkblue, 1);
-                    //border-bottom: .5px solid black;
+                    background-color: $_TertiaryBackground;
+                    padding: 36px;
                     text-align: center;
-                    border: 1px solid rgba($_eggshellblue, .3);
+                    border: 1px solid $_BorderColor;
                     border-radius: 3px;
                 }                
             }

@@ -4,7 +4,8 @@
 
 <!--Javascript imports and character settings-->
 <meta charset="UTF-8">
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+<script src="{{url_for('static', filename='jquery-3.7.1.min.js')}}"></script>
 <script src="/static/script.js"></script>
 <link rel="stylesheet" href="../static/css/main.css">
 
@@ -27,9 +28,9 @@
     <div class="content-area">
         <div class="content-browser">
             <h2>Test Category</h2>
-            <a href="#"><p>Test Link Before List</p></a>
-            <a href="#"><p>Test Link Before List</p></a>
-            <a href="#"><p>Test Link Before List</p></a>
+            <a href="#" onclick="retrieve_project('testFile.html')"><p>Test File 1</p></a>
+            <a href="#" onclick="retrieve_project('testFile2.html')"><p>Test File 2</p></a>
+            <a href="#" onclick="retrieve_project('testFile3.html')"><p>Test File 3</p></a>
             <a href="#"><p>Test Link Before List</p></a>
             <a href="#"><p>Test Link Before List</p></a>
             <a href="#"><p>Test Link Before List</p></a>
@@ -48,22 +49,10 @@
         </div>
 
         <div class="content-viewer">
-            <div class="content-section">
-                <h1>Header 1</h1>
-                <hr>
-                <h2>Header 2</h2>
-                <h3>Header 3</h3>
-                <p>
-                    It was supposed to be a dream vacation. They had planned it over a year in advance so that it would be perfect in every way. It had been what they had been looking forward to through all the turmoil and negativity around them. It had been the light at the end of both their tunnels. Now that the dream vacation was only a week away, the virus had stopped all air travel.
-                    I haven't bailed on writing. Look, I'm generating a random paragraph at this very moment in an attempt to get my writing back on track. I am making an effort. I will start writing consistently again!
-                    The red ball sat proudly at the top of the toybox. It had been the last to be played with and anticipated it would be the next as well. The other toys grumbled beneath. At one time each had held the spot of the red ball, but over time they had sunk deeper and deeper into the toy box.
-                </p>
-                <img src="../static/images/images.jpg" class = "small">
-                <img src="../static/images/images.jpg" class = "small">
-                <img src="../static/images/images.jpg" class = "small">
-                <img src="../static/images/images.jpg" class = "small">
-                <img src="../static/images/images.jpg" class = "small">
+            <div class="content-section" id="project-viewer-id">
+                
             </div>
+            <!--
             <div class="content-section">
                 <h1>Header 1</h1>
                 <h2>Header 2</h2>
@@ -85,7 +74,7 @@
                     <img src="../static/images/images.jpg" class = "medium">
                     <img src="../static/images/images.jpg" class = "large">
                 </div>
-            </div>
+            </div>-->
         </div>
         {% block test %}
 
