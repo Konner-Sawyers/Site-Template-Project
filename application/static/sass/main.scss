@@ -44,21 +44,75 @@ $_EmphasizedTextColor : rgba(black, 1);
 $_DeemphasizedTextColor : rgba(black, .6);
 */
 
+.tag_block{
+    display: inline-block;
+    text-align: center;
+    padding: 0;
+    height: 36px;
+}
+
+.tag{
+    //background-color: red;
+    width: fit-content;
+    height: auto;
+    padding: 4px 8px;
+    border: 2px solid $_BorderColor;
+    border-radius: 12px;
+    margin: auto;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    background-color: lightblue; 
+    border-radius: 50%;
+    display: inline-block;
+}
+
+
+
+.image-subs p{
+    text-align: center;
+    width: 25%;
+    display: inline-block;
+    //border: 1px solid orange;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    //object-fit: cover;
+
+    height: auto;
+}
+
 .code-display{
     margin: auto;
     margin-top: 24px;
     margin-bottom: 24px;
 
-    padding: 8px;
+    height: 560px;
+
+    padding: 2px;
     width: 70%;
     border: 1px solid $_BorderColor;
     border-radius: 3px;
+
+    overflow: auto;
+
+
+    scrollbar-color: $_SecondaryBackground $_PrimaryBackground;
+    scrollbar-width: 30px;
+
+    p{
+        padding: 4px;
+    }
+
     p code{
         font-size: 14px;
         font-family: 'Courier New', monospace;
         color: $_BasicTextColor;
         opacity: .75;
-        padding: 0px;
+        white-space: nowrap;
+        padding: 0%;
     }
 }
 
@@ -126,7 +180,7 @@ img{
     }
     &.medium{
         height: auto;
-        width: 50%;
+        width: 45%;
         margin: auto;
     }
     &.large{
@@ -184,6 +238,8 @@ img{
             h1{
                 //border-bottom: 1px solid rgba($_eggshellblue, .3);
                 //background-color: red;
+                font-size: 4vh;
+                letter-spacing: 50%;
                 height: 100%;
                 width: 100%;
                 font-family: 'Advent_Pro';
@@ -268,7 +324,7 @@ img{
                     display: inline-block;
                     width: 100%;
                     height: auto;
-                    padding: 4px 40px;
+                    padding: 16px 40px;
                     margin: 0px;
                     //background-color: lightcyan;
                 }

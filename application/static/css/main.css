@@ -12,21 +12,63 @@ $_BasicTextColor : rgba(black, 1);
 $_EmphasizedTextColor : rgba(black, 1);
 $_DeemphasizedTextColor : rgba(black, .6);
 */
+.tag_block {
+  display: inline-block;
+  text-align: center;
+  padding: 0;
+  height: 36px;
+}
+
+.tag {
+  width: fit-content;
+  height: auto;
+  padding: 4px 8px;
+  border: 2px solid rgba(149, 160, 155, 0.3);
+  border-radius: 12px;
+  margin: auto;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: lightblue;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.image-subs p {
+  text-align: center;
+  width: 25%;
+  display: inline-block;
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+}
+
 .code-display {
   margin: auto;
   margin-top: 24px;
   margin-bottom: 24px;
-  padding: 8px;
+  height: 560px;
+  padding: 2px;
   width: 70%;
   border: 1px solid rgba(149, 160, 155, 0.3);
   border-radius: 3px;
+  overflow: auto;
+  scrollbar-color: #232d30 #111517;
+  scrollbar-width: 30px;
+}
+.code-display p {
+  padding: 4px;
 }
 .code-display p code {
   font-size: 14px;
   font-family: "Courier New", monospace;
   color: #e4e3d3;
   opacity: 0.75;
-  padding: 0px;
+  white-space: nowrap;
+  padding: 0%;
 }
 
 hr {
@@ -93,7 +135,7 @@ img.small {
 }
 img.medium {
   height: auto;
-  width: 50%;
+  width: 45%;
   margin: auto;
 }
 img.large {
@@ -135,6 +177,8 @@ img.large {
     height: 100%;
   }
   body .logo-area h1 {
+    font-size: 4vh;
+    letter-spacing: 50%;
     height: 100%;
     width: 100%;
     font-family: "Advent_Pro";
@@ -198,7 +242,7 @@ img.large {
     display: inline-block;
     width: 100%;
     height: auto;
-    padding: 4px 40px;
+    padding: 16px 40px;
     margin: 0px;
   }
   body .content-area .content-browser:hover p {
