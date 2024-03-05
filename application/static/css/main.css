@@ -20,12 +20,66 @@ $_DeemphasizedTextColor : rgba(black, .6);
 }
 
 .tag {
+  width: -moz-fit-content;
   width: fit-content;
   height: auto;
   padding: 4px 8px;
   border: 2px solid rgba(149, 160, 155, 0.3);
   border-radius: 12px;
   margin: auto;
+}
+
+.proficiency {
+  display: inline-block;
+  padding: 0px;
+  height: 26px;
+  width: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.lvl0 {
+  height: 24px;
+  width: 24px;
+  background-color: #232d30;
+  border: 1px solid rgba(149, 160, 155, 0.3);
+  border-radius: 0px;
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+}
+
+.lvl1 {
+  height: 24px;
+  width: 24px;
+  background-color: orange;
+  border: 1px solid rgba(149, 160, 155, 0.3);
+  border-radius: 0px;
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+}
+
+.lvl2 {
+  height: 24px;
+  width: 24px;
+  background-color: yellow;
+  border: 1px solid rgba(149, 160, 155, 0.3);
+  border-radius: 0px;
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+}
+
+.lvl3 {
+  height: 24px;
+  width: 24px;
+  background-color: green;
+  border: 1px solid rgba(149, 160, 155, 0.3);
+  border-radius: 0px;
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
 }
 
 .dot {
@@ -127,7 +181,8 @@ img {
   display: inline-block;
   margin-left: auto;
   margin-right: auto;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 img.small {
   height: auto;
@@ -146,17 +201,17 @@ img.large {
 /*
 
 */
-@media only screen and (min-width: 478px) {
+@media only screen and (min-width: 8px) {
   body {
     background-color: green;
   }
 }
-@media only screen and (min-width: 678px) {
+@media only screen and (min-width: 78px) {
   body {
     background-color: blue;
   }
 }
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 400px) {
   body {
     margin: 0%;
     padding: 0%;

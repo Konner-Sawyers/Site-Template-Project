@@ -12,17 +12,36 @@ programming_portfolio_dict = {
     'Docker' : '<div class="tag_block"><p class="tag">Docker    <span style="background-color:yellow;" class="dot"></span><p></div>',
     'Numpy' : '<div class="tag_block"><p class="tag">Numpy    <span style="background-color:purple;" class="dot"></span><p></div>',
     'Tkinter' : '<div class="tag_block"><p class="tag">Tkinter    <span style="background-color:indigo;" class="dot"></span><p></div>',
-    'API' : '<div class="tag_block"><p class="tag">API    <span style="background-color:magenta;" class="dot"></span><p></div>'
+    'API' : '<div class="tag_block"><p class="tag">API    <span style="background-color:magenta;" class="dot"></span><p></div>',
+    'Sass' : '<div class="tag_block"><p class="tag">Sass    <span style="background-color:lightgreen;" class="dot"></span><p></div>',
     #'Python' : '<div class="tag_block"><p class="tag">Jupyter    <span style="background-color:orange;" class="dot"></span><p></div>',
     #'Python' : '<div class="tag_block"><p class="tag">Jupyter    <span style="background-color:orange;" class="dot"></span><p></div>',
     #'Python' : '<div class="tag_block"><p class="tag">Jupyter    <span style="background-color:orange;" class="dot"></span><p></div>',
     #'Python' : '<div class="tag_block"><p class="tag">Jupyter    <span style="background-color:orange;" class="dot"></span><p></div>',
+    'Sass' : '<div class="tag_block"><p class="tag">Sass    <span class="dot"></span><p></div>'
 }
+
+
 
 @app.route('/')
 def initialize():
-    variable = 'HELLO FROM FLASK'
-    return render_template("index.html", variable = variable)
+    return render_template("index.html")
+
+@app.route('/home',methods = ['GET', 'POST'])
+def home():
+    return render_template("home_page.html")
+
+@app.route('/about',methods = ['GET', 'POST'])
+def about():
+    return render_template("about_page.html")
+
+@app.route('/contact',methods = ['GET', 'POST'])
+def contact():
+    return render_template("contact_page.html")
+
+@app.route('/projects',methods = ['GET', 'POST'])
+def projects():
+    return render_template("project_page.html")
 
 @app.route('/get_project_file', methods=['GET'])
 def get_project_file():
