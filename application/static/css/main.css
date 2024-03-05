@@ -82,6 +82,30 @@ $_DeemphasizedTextColor : rgba(black, .6);
   padding: 0px;
 }
 
+.landing-div {
+  grid-area: 2/1/span 2/span 4;
+  pointer-events: auto;
+  position: relative;
+  height: 90vh;
+  width: 100%;
+  padding: 0%;
+  margin: 0%;
+}
+.landing-div canvas {
+  position: absolute;
+  pointer-events: auto;
+  background: linear-gradient(115deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), linear-gradient(115deg, #cc7178, #cc7178);
+  width: 100%;
+  height: 90vh;
+  margin: 0%;
+  padding: 0%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  cursor: none;
+  cursor: url("../assets/circle_cursor.png"), auto;
+}
+
 .dot {
   height: 12px;
   width: 12px;
@@ -128,14 +152,14 @@ $_DeemphasizedTextColor : rgba(black, .6);
 hr {
   height: 1px;
   background-color: rgba(149, 160, 155, 0.3);
-  width: calc(100% - 160px);
+  width: 80%;
   border: none;
 }
 
 h1, h2, h3 {
   color: #e4e3d3;
   text-align: left;
-  padding: 8px 80px;
+  padding: 8px 10%;
   font-family: "Inconsolata";
 }
 
@@ -158,7 +182,7 @@ a {
 p {
   color: #e4e3d3;
   text-align: left;
-  padding: 16px 80px;
+  padding: 16px 10%;
   padding-bottom: 36px;
   font-size: 16px;
   font-family: "Inconsolata";
@@ -229,7 +253,8 @@ img.large {
     grid-area: 1/1/span 1/span 1;
     background-color: #111517;
     width: 100%;
-    height: 100%;
+    height: calc(100% - 1px);
+    border-bottom: 1px solid rgba(149, 160, 155, 0.3);
   }
   body .logo-area h1 {
     font-size: 4vh;
@@ -263,7 +288,7 @@ img.large {
     margin: 0%;
   }
   body .nav-bar div p {
-    font-size: 24px;
+    font-size: 20px;
     width: 100%;
     height: auto;
     text-align: center;

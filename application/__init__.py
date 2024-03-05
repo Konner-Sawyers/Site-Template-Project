@@ -25,7 +25,7 @@ programming_portfolio_dict = {
 
 @app.route('/')
 def initialize():
-    return render_template("index.html")
+    return render_template("project-viewer.html")
 
 @app.route('/home',methods = ['GET', 'POST'])
 def home():
@@ -41,7 +41,7 @@ def contact():
 
 @app.route('/projects',methods = ['GET', 'POST'])
 def projects():
-    return render_template("project_page.html")
+    return render_template("project-viewer.html")
 
 @app.route('/get_project_file', methods=['GET'])
 def get_project_file():

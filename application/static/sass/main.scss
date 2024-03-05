@@ -118,7 +118,31 @@ $_DeemphasizedTextColor : rgba(black, .6);
 }
 
 
+.landing-div{
+    grid-area: 2 / 1 / span 2 / span 4 ;
 
+    pointer-events: auto;
+    position: relative;
+    height: 90vh;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    canvas{
+        position: absolute;
+        pointer-events: auto;
+        background: linear-gradient(115deg, rgba(black, .1), rgba(black, .1)),
+                    linear-gradient(115deg, rgba($_oldrose, 1), rgba($_oldrose, 1));
+        width: 100%;
+        height: 90vh;
+        margin: 0%;
+        padding: 0%;
+        top:0;
+        left:0;
+        z-index: 100;
+        cursor: none;
+        cursor: url("../assets/circle_cursor.png"), auto;
+    }
+}
 
 
 .dot {
@@ -179,14 +203,14 @@ $_DeemphasizedTextColor : rgba(black, .6);
 hr{
     height: 1px;
     background-color: $_BorderColor;
-    width: calc(100% - 160px);
+    width: calc(100% - 20%);
     border: none;
 }
 
 h1,h2,h3{
     color: $_BasicTextColor;
     text-align: left;
-    padding: 8px 80px;
+    padding: 8px 10%;
     font-family: 'Inconsolata';
 }
 
@@ -209,7 +233,7 @@ a{
 p{
     color: $_BasicTextColor;
     text-align: left;
-    padding: 16px 80px;
+    padding: 16px 10%;
     padding-bottom: 36px;
     font-size: 16px;
     font-family: 'Inconsolata';
@@ -293,8 +317,8 @@ img{
             grid-area: 1 / 1 / span 1 / span 1;
             background-color: $_PrimaryBackground;
             width: 100%;
-            height: 100%;
-            //border-bottom: 1px solid rgba($_eggshellblue, .3);
+            height: calc(100% - 1px);
+            border-bottom: 1px solid rgba($_eggshellblue, .3);
             h1{
                 //border-bottom: 1px solid rgba($_eggshellblue, .3);
                 //background-color: red;
@@ -334,7 +358,7 @@ img{
                 padding: 0%;
                 margin: 0%;
                 p{
-                    font-size: 24px;
+                    font-size: 20px;
                     width: 100%;
                     height: auto;
                     text-align: center;
