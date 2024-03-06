@@ -12,6 +12,46 @@ $_BasicTextColor : rgba(black, 1);
 $_EmphasizedTextColor : rgba(black, 1);
 $_DeemphasizedTextColor : rgba(black, .6);
 */
+.skill {
+  display: inline-block;
+  width: 20%;
+  height: 240px;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.skill img {
+  display: inline-block;
+  width: auto;
+  max-width: 80%;
+  height: 60%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.skill p {
+  padding: 20px;
+  text-align: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+a {
+  text-decoration: underline;
+}
+a:hover {
+  color: #95a09b;
+}
+
+a:visited {
+  text-decoration: underline;
+  color: #e4e3d3;
+}
+a:visited:hover {
+  color: #95a09b;
+}
+
 .tag_block {
   display: inline-block;
   text-align: center;
@@ -90,6 +130,21 @@ $_DeemphasizedTextColor : rgba(black, .6);
   width: 100%;
   padding: 0%;
   margin: 0%;
+  cursor: none;
+}
+.landing-div .home-text {
+  pointer-events: inherit;
+  position: relative;
+  width: 70%;
+  height: 50%;
+  margin: 0%;
+  padding: 0%;
+  top: 20%;
+  z-index: 1000;
+  cursor: none;
+}
+.landing-div .home-text h1 {
+  cursor: none;
 }
 .landing-div canvas {
   position: absolute;
@@ -103,7 +158,6 @@ $_DeemphasizedTextColor : rgba(black, .6);
   left: 0;
   z-index: 100;
   cursor: none;
-  cursor: url("../assets/circle_cursor.png"), auto;
 }
 
 .dot {
@@ -112,6 +166,20 @@ $_DeemphasizedTextColor : rgba(black, .6);
   background-color: lightblue;
   border-radius: 50%;
   display: inline-block;
+}
+
+.content-full-page {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  width: 70%;
+  margin: auto;
+  height: auto;
+  background-color: #1a2124;
+  padding: 36px;
+  text-align: center;
+  border: 1px solid rgba(149, 160, 155, 0.3);
+  border-radius: 3px;
+  min-height: 50%;
 }
 
 .image-subs p {
@@ -173,10 +241,6 @@ h2 {
 
 h3 {
   font-weight: 400;
-}
-
-a {
-  text-decoration: none;
 }
 
 p {
@@ -255,6 +319,8 @@ img.large {
     width: 100%;
     height: calc(100% - 1px);
     border-bottom: 1px solid rgba(149, 160, 155, 0.3);
+    position: sticky;
+    top: 0;
   }
   body .logo-area h1 {
     font-size: 4vh;
@@ -273,6 +339,9 @@ img.large {
     top: 0;
     border-bottom: 1px solid rgba(149, 160, 155, 0.3);
     text-align: right;
+  }
+  body .nav-bar a {
+    text-decoration: none;
   }
   body .nav-bar div p {
     font-weight: 300;
@@ -334,6 +403,7 @@ img.large {
     width: auto;
     padding: 0%;
     margin: 0%;
+    text-decoration: none;
   }
   body .content-area .content-browser a p {
     font-weight: 200;

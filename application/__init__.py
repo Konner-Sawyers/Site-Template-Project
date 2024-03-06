@@ -18,14 +18,18 @@ programming_portfolio_dict = {
     #'Python' : '<div class="tag_block"><p class="tag">Jupyter    <span style="background-color:orange;" class="dot"></span><p></div>',
     #'Python' : '<div class="tag_block"><p class="tag">Jupyter    <span style="background-color:orange;" class="dot"></span><p></div>',
     #'Python' : '<div class="tag_block"><p class="tag">Jupyter    <span style="background-color:orange;" class="dot"></span><p></div>',
-    'Sass' : '<div class="tag_block"><p class="tag">Sass    <span class="dot"></span><p></div>'
+    'Sass' : '<div class="tag_block"><p class="tag">Sass    <span class="dot"></span><p></div>',
+
+    'LEVEL_1' : '<div class="proficiency"><span class="lvl1"></span><span class="lvl0"></span><span class="lvl0"></span></div>',
+    'LEVEL_2' : '<div class="proficiency"><span class="lvl2"></span><span class="lvl2"></span><span class="lvl0"></span></div>',
+    'LEVEL_3' : '<div class="proficiency"><span class="lvl3"></span><span class="lvl3"></span><span class="lvl3"></span></div>'
 }
 
 
 
 @app.route('/')
 def initialize():
-    return render_template("project-viewer.html")
+    return render_template("home_page.html")
 
 @app.route('/home',methods = ['GET', 'POST'])
 def home():
@@ -33,7 +37,7 @@ def home():
 
 @app.route('/about',methods = ['GET', 'POST'])
 def about():
-    return render_template("about_page.html")
+    return render_template("about_page.html", variable = programming_portfolio_dict)
 
 @app.route('/contact',methods = ['GET', 'POST'])
 def contact():

@@ -1,5 +1,98 @@
 {% extends "nav_bar.html" %}
 
 {% block content_area %}
-    
+<div class="content-area">
+    <div class="content-full-page">
+        <h1>About Me</h1>
+        <hr>
+        <p>
+            I am a recent graduate with a Bachelor's in Computer Science from Marshall University. I have experience in creating client ready data management systems, data analysis, and web development all while working in team environments due to course work. I personally am in pursuit of improving my skills in the field of simulations and efficient programming along with further improving my skills with data gathering/transformation and service hosting and management. 
+        </p>
+        <hr>
+        <h2>Skills</h2>
+        <p>
+            Below are a series of frameworks, technologies and languages I am familiar with. Along with the displaying of the skill will be a rating system with how confident I am in my knowledge.
+            <br><br>
+            Everything is rated on a scale of 1 - 3 and generally goes as follows:
+            <ul style="  list-style-type: none;">
+                <li><p>Level 1: Are things that I have worked with but it has either been a long while to the point a little retention or I have little exposure to in general.</p></li>
+                <li><p>Level 2: Things I have worked with that I have developed a decent understanding of or I had a good understanding of but have gotten rusty after not using for a time.</p></li>
+                <li><p>Level 3: Things I am very confident in and I feel as though I understand more of the complicated features.</p></li>
+            </ul>
+        </p>
+        <h3>Languages</h3>
+        <div class="skill">
+            <img src="../static/assets/logos/python-logo.svg">
+            <p>Python</p>
+            {{ variable['LEVEL_3'] | safe }}
+        </div>
+        <div class="skill">
+            <img src="../static/assets/logos/sql-logo.svg">
+            <p>SQL</p>
+            {{ variable['LEVEL_3'] | safe }}
+        </div>
+        <div class="skill">
+            <img src="../static/assets/logos/html-5-logo.svg">
+            <p>HTML/CSS</p>
+            {{ variable['LEVEL_2'] | safe }}
+        </div>
+        <div class="skill">
+            <img src="../static/assets/logos/php-logo.svg">
+            <p>PHP</p>
+            {{ variable['LEVEL_2'] | safe }}
+        </div>
+        <div class="skill">
+            <img src="../static/assets/logos/cpp-logo.svg">
+            <p>C++</p>
+            {{ variable['LEVEL_2'] | safe }}
+        </div>
+        <div class="skill">
+            <img src="../static/assets/logos/javascript-logo.svg">
+            <p>JavaScript</p>
+            {{ variable['LEVEL_2'] | safe }}
+        </div>
+        <div class="skill">
+            <img src="../static/assets/logos/java-logo.svg">
+            <p>Java</p>
+            {{ variable['LEVEL_1'] | safe }}
+        </div>
+        <hr>
+        <h3>Technologies and Frameworks</h3>
+        <div class="skill">
+            <img src="../static/assets/logos/vscode-logo.svg">
+            <p>VS Code</p>
+            {{ variable['LEVEL_3'] | safe }}
+        </div>
+        <div class="skill">
+            <img src="../static/assets/logos/mysql-logo.png">
+            <p>MySQL</p>
+            {{ variable['LEVEL_3'] | safe }}
+        </div>
+        <div class="skill">
+            <img src="../static/assets/logos/metabase-logo.svg">
+            <p>Metabase</p>
+            {{ variable['LEVEL_3'] | safe }}
+        </div>
+        <div class="skill">
+            <img src="../static/assets/logos/github-logo-white.png">
+            <p>Github</p>
+            {{ variable['LEVEL_2'] | safe }}
+        </div>
+        <div class="skill">
+            <img src="../static/assets/logos/01-primary-blue-docker-logo.svg">
+            <p>Docker</p>
+            {{ variable['LEVEL_2'] | safe }}
+        </div>
+        <div class="skill">
+            <img src="../static/assets/logos/flask-logo.svg">
+            <p>Flask</p>
+            {{ variable['LEVEL_2'] | safe }}
+        </div>
+        <div class="skill">
+            <img src="../static/assets/logos/jupyter-logo.svg">
+            <p>Jupyter Notebooks</p>
+            {{ variable['LEVEL_2'] | safe }}
+        </div>
+    </div>
+</div>
 {% endblock %}
