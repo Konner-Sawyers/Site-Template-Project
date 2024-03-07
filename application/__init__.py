@@ -52,3 +52,6 @@ def get_project_file():
     file_name = request.args.get('nameOfFile')
     file = render_template(file_name, variable = programming_portfolio_dict)
     return jsonify({'result': file})
+    
+if __name__ == "__main__":
+    app.run(host='0.0.0.0')
