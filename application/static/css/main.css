@@ -12,6 +12,18 @@ $_BasicTextColor : rgba(black, 1);
 $_EmphasizedTextColor : rgba(black, 1);
 $_DeemphasizedTextColor : rgba(black, .6);
 */
+ul {
+  margin: 0px;
+}
+ul li {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+ul li p {
+  padding-top: 0px;
+}
+
 .skill {
   display: inline-block;
   width: 20%;
