@@ -14,6 +14,7 @@ programming_portfolio_dict = {
     'Tkinter' : '<div class="tag_block"><p class="tag">Tkinter    <span style="background-color:indigo;" class="dot"></span><p></div>',
     'API' : '<div class="tag_block"><p class="tag">API    <span style="background-color:magenta;" class="dot"></span><p></div>',
     'Sass' : '<div class="tag_block"><p class="tag">Sass    <span style="background-color:lightgreen;" class="dot"></span><p></div>',
+    'Pyglet' : '<div class="tag_block"><p class="tag">Pyglet    <span style="background-color:gray;" class="dot"></span><p></div>',
     #'Python' : '<div class="tag_block"><p class="tag">Jupyter    <span style="background-color:orange;" class="dot"></span><p></div>',
     #'Python' : '<div class="tag_block"><p class="tag">Jupyter    <span style="background-color:orange;" class="dot"></span><p></div>',
     #'Python' : '<div class="tag_block"><p class="tag">Jupyter    <span style="background-color:orange;" class="dot"></span><p></div>',
