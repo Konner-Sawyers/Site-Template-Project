@@ -1,0 +1,21 @@
+
+<h1>C++ Basic Particle Sim Using SIMD</h1>
+<hr>
+<h3>Languages & Scripting</h3>
+{{ variable['C++'] | safe }}
+<h3>Frameworks & Technology</h3>
+{{ variable['SDL'] | safe }}
+{{ variable['API'] | safe }}
+
+<br>
+<br>
+<hr>
+<br>
+<p>
+    A basic particle simulation based on randomized positions at set sizes, global force, and particle repulsive force. Used as learning experience and hands on practice with SIMD instruction sets in C++.
+</p>
+<hr>
+<br>
+<div class="images">
+    <img class="large" src="../../static/assets/SimplePartSim.png">
+</div>

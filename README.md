@@ -8,6 +8,9 @@ python -m flask --app application run --debug --host=0.0.0.0
 
 #SETUP NOTES IGNORE FOR NOW
 
+sudo systemctl restart nginx
+sudo systemctl start nginx
+
 sudo systemctl start portfolio
 sudo systemctl enable portfolio
 sudo systemctl status portfolio

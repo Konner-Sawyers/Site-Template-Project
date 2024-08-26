@@ -6,6 +6,7 @@ programming_portfolio_dict = {
     'Python' : '<div class="tag_block"><p class="tag">Python    <span style="background-color:red;" class="dot"></span><p></div>',
     'HTML/CSS' : '<div class="tag_block"><p class="tag">HTML/CSS    <span style="background-color:lightblue;" class="dot"></span><p></div>',
     'C++' : '<div class="tag_block"><p class="tag">C++    <span style="background-color:green;" class="dot"></span><p></div>',
+    'SDL' : '<div class="tag_block"><p class="tag">SDL    <span style="background-color:pink;" class="dot"></span><p></div>',
     'Jupyter' : '<div class="tag_block"><p class="tag">Jupyter    <span style="background-color:orange;" class="dot"></span><p></div>',
     'SQL' : '<div class="tag_block"><p class="tag">SQL    <span style="background-color:blue;" class="dot"></span><p></div>',
     'MySQL' : '<div class="tag_block"><p class="tag">MySQL    <span style="background-color:white;" class="dot"></span><p></div>',
